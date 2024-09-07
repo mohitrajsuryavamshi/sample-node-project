@@ -1,3 +1,2 @@
 sudo amazon-linux-extras install nginx1
-sudo yum install -y curl unzip
-
+sudo yum install -y nginx curl --allowerasing --skip-broken
