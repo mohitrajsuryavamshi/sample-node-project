@@ -1,1 +1,2 @@
-/home/ec2-user/startnode.sh
+sudo systemctl start nginx
+sudo systemctl enable nginx
