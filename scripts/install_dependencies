@@ -1,16 +1,4 @@
 #!/bin/bash
-
-# Install Nginx and curl
-sudo amazon-linux-extras install nginx1 -y
-sudo yum install -y nginx curl --allowerasing --skip-broken
-
-# Change directory to where your app is deployed
-cd /var/www/html/
-
-# Install Node.js dependencies (if package.json exists)
-if [ -f "package.json" ]; then
-  npm install
-fi
-
-# Start or restart Nginx (if applicable)
-sudo systemctl restart nginx
+cd /home/ec2-user/sample-node-project
+git pull 
+sudo systemctl restart node-app.service
