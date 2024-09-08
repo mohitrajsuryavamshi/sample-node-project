@@ -1,2 +1,3 @@
-sudo systemctl start nginx
-sudo systemctl enable nginx
+cd /home/ec2-user/sample-node-project
+git pull 
+sudo systemctl restart node-app.service
