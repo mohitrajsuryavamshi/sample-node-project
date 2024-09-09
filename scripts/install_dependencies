@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ec2-user/sample-node-project
-git pull 
+//git pull 
 sudo systemctl restart node-app.service
