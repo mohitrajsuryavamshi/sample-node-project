@@ -6,6 +6,9 @@ files:
     overwrite: true
 hooks:
   BeforeInstall:
+    - location: scripts/remove_old_file.sh
+      timeout: 300
+      runas: root
     - location: scripts/install_dependencies
       timeout: 300
       runas: root
