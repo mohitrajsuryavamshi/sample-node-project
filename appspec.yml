@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /app/server/views/index.ejs
     destination: /home/ec2-user/sample-node-project/app/server/views/
+    overwrite: true
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
